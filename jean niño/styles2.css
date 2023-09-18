@@ -1,0 +1,20 @@
+/* Estilos para la página de detalle */
+.jeans-detail {
+    text-align: center;
+    padding: 20px;
+}
+
+.jeans-detail .jeans-image {
+    display: inline-block;
+    position: center;
+    overflow: hidden;
+}
+
+.jeans-detail .jeans-image img {
+    max-width: center;
+    transition: transform 0.5s ease; /* Agregamos una transición suave */
+}
+
+.jeans-detail .jeans-image:hover img {
+    transform: rotate(360deg); /* Rotación de 360 grados al pasar el mouse */
+}

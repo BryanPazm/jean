@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Jeans para Niños</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles_galeria.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Jeans para Niños</h1>
+    </header>
+
+    <div class="jeans-container">
+        <div class="jeans-item">
+            <img src="/Imagen1.png" alt="Jean 1" onclick="showGallery(['/MYP.png', '/jean1.png', '/tracero1.png'])">
+            <h2>Jean Azul</h2>
+            <p>Precio: $29.99</p>
+        </div>
+
+        <div class="jeans-item">
+            <img src="/Imagen2.png" alt="Jean 2" onclick="showGallery(['/Imagen2.png', '/Imagen2_2.png'])">
+            <h2>Jean Negro</h2>
+            <p>Precio: $24.99</p>
+        </div>
+
+        <!-- Agrega más elementos de jean aquí -->
+
+        <div class="jeans-item">
+            <img src="/Imagen3.png" alt="Jean3" onclick="showGallery(['/Imagen3.png', '/Imagen3_2.png'])">
+            <h2>Jean Gris</h2>
+            <p>Precio: $26.999</p>
+        </div>
+    </div>
+
+    <!-- Galería de imágenes oculta inicialmente -->
+    <div class="image-gallery" id="imageGallery">
+        <span class="close-button" onclick="closeGallery()">&times;</span>
+        <img id="galleryImage" src="" alt="Imagen de la galería">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Catálogo de Jeans para Niños</p>
+    </footer>
+    <script src="/galeria.js"></script>
+</body>
+</html>
